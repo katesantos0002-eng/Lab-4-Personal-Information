@@ -1,0 +1,246 @@
+:root {
+    --accent: #2e7d32;
+    --bg: #e8f5e9;
+    --card-bg: #ffffff;
+    --text: #222831;
+    --muted: #6b7280;
+    --border: #c8e6c9;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    text-decoration: underline;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  article, aside, footer {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+  }
+
+  section {
+    margin-bottom: 1.5rem;
+  }
+
+  section:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.3rem;
+  }
+
+  .profile-pic {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  .tags span {
+    display: inline-block;
+    background: #e8f1f2;
+    color: var(--accent);
+    border-radius: 20px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.85rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+
+  form label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+
+  form small {
+    color: var(--muted);
+  }
+
+  button[type="submit"] {
+    margin-top: 1rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+
+  details {
+    background: #f0f4f5;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin-top: 0.7rem;
+  }
+
+  summary {
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  iframe {
+    width: 100%;
+    height: 152px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+
+  footer .social a {
+    margin: 0 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  footer .social a:hover {
+    text-decoration: underline;
+  }
+
+  article, aside, footer {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+details {
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+details:hover {
+  background: #e8f5e9;
+}
+
+details[open] {
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.25);
+}
+
+summary {
+  transition: color 0.3s;
+}
+
+summary:hover,
+details[open] summary {
+  color: #2e7d32;
+}
+
+form input:hover {
+  border-color: #66bb6a;
+}
+
+form input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
+form input:required {
+  border-left: 3px solid #e74c3c;
+}
+
+form input[type="date"],
+form input[type="color"] {
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 1rem 0.75rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  article,
+  aside {
+    padding: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

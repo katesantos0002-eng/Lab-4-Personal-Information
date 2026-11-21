@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kate's Profile</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Kate's Profile</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article>
+
+      <picture>
+        <source media="(min-width: 640px)" srcset="profile-pic-desktop.jpg">
+        <source media="(max-width: 639px)" srcset="profile-pic-mobile.jpg">
+        <img class="profile-pic" src="profile-pic-desktop.jpg" alt="Photo of Kate">
+      </picture>
+
+      <section id="bio">
+        <h2>Bio</h2>
+        <p data-role="student" data-dob="2004-06-02">
+          Hi, I'm Kate! Someone who finds peace in music, energy in sports,
+          and satisfaction in a clean, organized home. Small things, big happiness.
+        </p>
+
+        <div class="tags" aria-label="Interests">
+          <span data-interest="music">🎵 Music</span>
+          <span data-interest="sports">🏓 Sports</span>
+          <span data-interest="organizing">🧹 Organizing</span>
+        </div>
+
+        <details id="achievements">
+          <summary>Achievements &amp; Certifications</summary>
+          <ul>
+            <li>NPSAC Meet - 2nd Place</li>
+            <li>Division Meet - 2nd Place</li>
+            <li>Athlete of the Year</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <details>
+          <summary>Show hobbies</summary>
+          <ul>
+            <li>Listening to music</li>
+            <li>Doing household chores</li>
+            <li>Sports</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Info</h2>
+        <form action="#" method="post">
+  <label for="email">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="you@example.com"
+    value="katesantos000@gmail.com"
+    required
+  >
+
+  <label for="mobile">Mobile Number</label>
+  <input
+    type="tel"
+    id="mobile"
+    name="mobile"
+    placeholder="0912 345 6789"
+    pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+    value="09123456789"
+    required
+  >
+  <small>Format: 11 digits, e.g. 09123456789</small>
+
+  <label for="dob">Date of Birth</label>
+  <input type="date" id="dob" name="dob" value="2004-06-02">
+
+  <label for="favcolor">Favorite Color</label>
+  <input type="color" id="favcolor" name="favcolor" value="#2b6777">
+
+  <button type="submit">Submit</button>
+</form>
+      </section>
+
+      <section>
+        <h2>Now Playing</h2>
+        <iframe
+          src="https://open.spotify.com/embed/track/7lbaZnegIyWdbzwtEV8Tnu"
+          title="I Speak Jesus - Charity Gayle"
+          allow="encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+    </article>
+
+    <aside>
+      <h2>Random Fact</h2>
+      <p><strong>Birthday:</strong> June 2, 2004</p>
+      <p><strong>Age:</strong> 22 years old</p>
+      <p>Kate can multitask, cleaning the house while blasting her favorite playlist.</p>
+      <p>Kate believes small wins lead to big happiness.</p>
+      <p>Kate's playlist has a song for every mood, and every chore.</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <h2>Connect with me</h2>
+    <div class="social">
+      <a href="https://www.facebook.com/share/1BzSmL7WVT/" target="_blank" rel="noopener">📘 Facebook</a>
+<a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=4nwo4np" target="_blank" rel="noopener">📷 Instagram</a>
+<a href="https://open.spotify.com/track/59CkKONlJ4BTyKshVA15QP" target="_blank" rel="noopener">🎵 Spotify</a>
+    </div>
+    <p>&copy; 2026 Kate's Profile. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
